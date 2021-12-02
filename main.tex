@@ -78,15 +78,16 @@ Los valores propios del hamiltoniano o las energias posibles del sistema son
     \end{align*}
 %\end{equation}
 
-usando la aproximacion comun en RPE de $$ g_a \beta_a \hbar >> T  $$
-tenemos
+usando la aproximacion comun en RPE de $ (g_e \beta_e + g_N \beta_N)^2 H^2 >> T^2 \hbar^2  $ y la serie $ \sqrt{1 + \epsilon^2} = 1+\frac{\epsilon^2}{2}-\frac{\epsilon^4}{8} + ... $ podemos tomar $ \epsilon = \frac{7}{4}\frac{T \hbar}{H(g_e \beta_e + g_N \beta_N)} $ y el termino de la raiz se aproxima a
+$$ 4 H (g_e \beta_e + g_N \beta_N) \times \left(1 + \frac{7^2}{2 \times 4^2} \frac{T^2 \hbar^2}{H^2(g_e \beta_e + g_N \beta_N)^2} \right) $$ 
+con el error dependiendo de $\epsilon^4$
 
 %\begin{equation}
     \begin{align*}
         E_1 = \frac{\hbar}{4}(T \hbar - 2 H (g_e \beta_e - g_N \beta_N)) \\
         E_2 = \frac{\hbar}{4}(T \hbar + 2 H (g_e \beta_e - g_N \beta_N)) \\
-        E_3 = \frac{\hbar}{8}\left(-5 T \hbar - 4 H (g_e \beta_e + g_N \beta_N)\right) \\
-        E_4 = \frac{\hbar}{8}\left(-5 T \hbar + {4 H} (g_e \beta_e + g_N \beta_N)\right) \\
+        E_3 \approx -\frac{5}{8} T \hbar^2 - \frac{H \hbar}{2} (g_e \beta_e + g_N \beta_N) - \frac{7^2}{8^2} \frac{T^2 \hbar^2}{H(g_e \beta_e + g_N \beta_N)}\\
+        E_4 \approx -\frac{5}{8} T \hbar^2 + \frac{H \hbar}{2} (g_e \beta_e + g_N \beta_N) + \frac{7^2}{8^2} \frac{T^2 \hbar^2}{H(g_e \beta_e + g_N \beta_N)} \\
     \end{align*}
 %\end{equation}
 
